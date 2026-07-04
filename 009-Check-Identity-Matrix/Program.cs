@@ -4,7 +4,7 @@ namespace _009_Check_Identity_Matrix
 {
     internal class Program
     {
-        // تم تغيير Console.WriteLine إلى Console.Write ليتم طباعة المصفوفة كصف وليس أعمدة
+        // Method to print the matrix to the console
         static void PrintMatrix(int[,] arr)
         {
             for (int i = 0; i < arr.GetLength(0); i++)
@@ -13,27 +13,29 @@ namespace _009_Check_Identity_Matrix
                 {
                     Console.Write(arr[i, j] + "\t");
                 }
-                Console.WriteLine(); // للانتقال لسطر جديد بعد كل صف
+                Console.WriteLine(); // Move to a new line after each row
             }
         }
 
-        // تم إضافة static ليمكن استدعاؤها من Main
+        // Method to check if the given matrix is an Identity Matrix
         static bool IsIdentityMatrix(int[,] arr)
         {
-            // التحقق من أن المصفوفة مربعة (اختياري ولكنه مهم)
+            // Check if the matrix is square (rows must equal columns)
             if (arr.GetLength(0) != arr.GetLength(1)) return false;
 
             for (int i = 0; i < arr.GetLength(0); i++)
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
+                    // The main diagonal elements must be 1
                     if (i == j && arr[i, j] != 1)
                     {
-                        return false; // القطر الرئيسي يجب أن يكون 1
+                        return false;
                     }
+                    // All other elements must be 0
                     else if (i != j && arr[i, j] != 0)
                     {
-                        return false; // العناصر الأخرى يجب أن تكون 0
+                        return false;
                     }
                 }
             }
