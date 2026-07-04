@@ -6,10 +6,10 @@ This repository contains my solutions to 50 C# programming problems.
 - ✅ Problem 2
 - ✅ Problem 3
 - ✅ Problem 4
-- ⏳ Problem 5
-- ⏳ Problem 6
-- ⏳ Problem 7
-- ⏳ Problem 8
-- ⏳ Problem 9
-- ⏳ Problem 10
+- ✅ Problem 5
+- ✅ Problem 6
+- ✅ Problem 7
+- ✅ Problem 8
+- ✅ Problem 9
+- ✅ Problem 10
 ...
