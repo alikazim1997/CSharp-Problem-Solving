@@ -29,7 +29,7 @@ namespace _015_Print_Frist_Letter_Of_Each_Word
                 // Check if the current character is not a space and marks the beginning of a word
                 if (TextS1[i] != ' ' && IsFirstLetter)
                 {
-                    Console.WriteLine(TextS1[i]);
+                    Console.WriteLine(char.ToUpper(TextS1[i]));
                 }
 
                 // Update the flag: set to true if current character is a space, otherwise set to false
